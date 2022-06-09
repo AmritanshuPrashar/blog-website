@@ -79,28 +79,28 @@ app.post('/contact', (req, res) => {
   const email = req.body.email;
   const ListId = "7999aeedcf";
   const url = "https://us10.api.mailchimp.com/3.0/lists/" + ListId;
-
+  const apikey = "Enter_Your_API_KEY_here";
   const options = {
-      method: 'POST',
-      auth: "john:6725f2ed4a0d945769ca9ec17a847717-us10"
+    method: 'POST',
+    auth: "john:" + apikey
   }
   const data = {
-      members: [
-          {
-              email_address: email,
-              status: 'subscribed',
-              merge_fields: {
-                  FNAME: firstName,
-                  LNAME: lastName
-              }
-          }
-      ]
+    members: [
+      {
+        email_address: email,
+        status: 'subscribed',
+        merge_fields: {
+          FNAME: firstName,
+          LNAME: lastName
+        }
+      }
+    ]
   };
 
   const jsonData = JSON.stringify(data);
   const request = https.request(url, options, (response) => {
     res.redirect('/');
-  
+
   })
 
   request.write(jsonData);
