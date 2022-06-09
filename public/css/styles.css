@@ -1,0 +1,89 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+html {
+	position: relative;
+	min-height: 100%;
+  }
+  body {
+	margin-bottom: 60px; /* Margin bottom by footer height */
+  }
+  .home-heading{
+	  font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+	  font-style: italic;
+	}
+
+.container-fluid {
+	padding-top: 70px;
+	padding-bottom: 70px;
+}
+.navbar {
+	padding-top: 15px;
+	padding-bottom: 15px;
+	border: 0;
+	border-radius: 0;
+	margin-bottom: 0;
+	font-size: 12px;
+	letter-spacing: 5px;
+	background-color: black;
+}
+.navbar-nav li a:hover {
+	color: #1abc9c !important;
+}
+.heading{
+	font-family: 'Bebas Neue', cursive;
+}
+
+.container-contact{
+	width: 50%;
+	margin-top: 50px;
+	font-family: 'Roboto Mono', monospace;
+}
+.container-contact h1{
+	font-size: 18px;
+	font-family: 'Bebas Neue', cursive;
+}
+.container-contact button{
+	margin-top: 5px;
+}
+.main-contact{
+	margin-top: 10px;
+	margin-bottom: 20px;
+}
+.content-back{
+	padding: 7px;
+	font-family: 'Roboto Mono', monospace;
+	font-size: 18px;
+	color:black;
+	background-color: rgb(200, 194, 194);
+	margin: 5px;
+}
+.footer-padding {
+	padding-bottom: 60px;
+}
+
+.footer {
+	position: absolute;
+	bottom: 0;
+	width: 100%;
+	height: 60px; 
+	line-height: 60px; 
+	background-color: #1abc9c;
+  }
+
+.footer span {
+	text-align: center;
+	align-items: center;
+	/* margin-top: 25px;*/
+	margin-left: 35%; 
+	font-size: 14px;
+	color: #fff;
+}
+
+p a{
+	color: beige;
+}
+
+p a:hover{
+	color: #1abc9c !important;
+	text-decoration: none;
+}

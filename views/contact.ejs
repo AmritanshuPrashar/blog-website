@@ -1,0 +1,48 @@
+<%-include("partials/header")%>
+
+<h1>Contact</h1>
+
+<!-- <p><%=contactContent%></p> -->
+<div class="main-contact">
+    <p>Here's my Social Media Handles </p>
+
+    <a href="https://www.instagram.com/amriwtf" target="_blank">
+        <img alt="Instagram" src="https://img.icons8.com/bubbles/50/undefined/instagram-new--v2.png"
+        width=50" height="50" >
+        </a>
+        <a href="https://github.com/AmritanshuPrashar/" target="_blank">
+            <img alt="github" src="https://img.icons8.com/bubbles/50/undefined/github.png"
+            width=50" height="50" >
+            </a>
+            <a href="https://twitter.com/amriwtf" target="_blank">
+                <img alt="twitter" src="https://img.icons8.com/bubbles/50/undefined/twitter-circled.png"
+                width=50" height="50" >
+                </a>
+</div>
+<div class="container-contact">
+    <main class="form-signin w-100 m-auto"  >
+        <form method="post" action="/contact">
+            <h1 class="h5 mb-3 fw-normal">Want to hear from Us ? Join our Amazing Newsletter feed :)</h1>
+        
+            <div class="form-floating">
+                <label for="floatingInput">First Name</label>
+              <input type="text" name = 'fName' class="form-control" id="floatingInput" placeholder="John" required autofocus>
+            </div>
+            <div class="form-floating">
+                <label for="floatingPassword">Last Name</label>
+              <input type="text" name = 'lName' class="form-control" id="floatingPassword" placeholder="Walker" required>
+            </div>
+            <div class="form-floating">
+                <label for="floatingPassword">Email Address</label>
+                <input type="email" name = 'email' class="form-control" id="third" placeholder="abcxyz123@gmail.com" required>
+              </div>
+        
+        
+              <button class="w-100 btn btn-lg btn-primary" type="submit">Sign up</button>
+             
+          </form>
+    </main>
+</div>
+
+
+<%-include("partials/footer")%>
